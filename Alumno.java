@@ -1,11 +1,22 @@
+
 public class Alumno
 { 
     private String nombre;
     private int clave;
     
-    public void alumno(String elNombre,int laClave)
+    public Alumno(int clave, String nombre)
     {
-        nombre = elNombre;
-        clave = laClave;
+        this.nombre = nombre;
+        clave = clave;
     }
+    
+   public int dimeClave()
+   {
+       return clave;
+   }
+   
+   public String dimeNombre()
+   {
+       return nombre;
+   }
 }
